@@ -6,9 +6,9 @@ int main()
 
     // Game Window Dimensions in struct 
     struct {
-    int width = 350;                // Window Width
-    int height = 200;               // Window Height
-    Color background = WHITE;       // Background Color
+    const int width = 512;                // Window Width
+    const int height = 380;               // Window Height
+    Color background = WHITE;             // Background Color
     } gameWindow;
 
     // Create FPS variable 
@@ -28,5 +28,5 @@ int main()
         ClearBackground(gameWindow.background);     // Create White background
         EndDrawing();                               // End Drawing
     }
-
+    CloseWindow();
 }
