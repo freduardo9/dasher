@@ -1,14 +1,14 @@
 #include "raylib.h" // Include raylib.h 
 
-// Create Main 
+// Create Main Function
 int main() 
 {
 
     // Game Window Dimensions in struct 
     struct {
-    int width = 350;            // Window Width
+    int width = 350;                // Window Width
     int height = 200;               // Window Height
-    Color background = WHITE;   // Background Color
+    Color background = WHITE;       // Background Color
     } gameWindow;
 
     // Create FPS variable 
@@ -25,7 +25,7 @@ int main()
     while (!WindowShouldClose())
     {
         BeginDrawing();                             // Begin Drawing
-        ClearBackground(gameWindow.background);                // Create White background
+        ClearBackground(gameWindow.background);     // Create White background
         EndDrawing();                               // End Drawing
     }
 
